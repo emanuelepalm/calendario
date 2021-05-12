@@ -5,7 +5,7 @@ public class Menu {
     Scanner scanner = new Scanner(System.in);
     public void startMenu() {
         System.out.println("Benvenuto nel calendario!");
-        System.out.println("Vuoi controllare: \n1)MESE \n2)STAGIONE");
+        System.out.println("Vuoi controllare: \n1)MESE \n2)STAGIONE\n0)ESCI");
         int num = scanner.nextInt();
         switch (num) {
             case 1:
@@ -14,7 +14,8 @@ public class Menu {
             case 2:
                 seasonMenu();
                 break;
-
+            case 0:
+                break;
             default:
                 System.err.println("TASTO ERRATO!");
                 startMenu();
@@ -37,7 +38,5 @@ public class Menu {
         String stagione = calendario.seasonOfDay();
         System.out.println(stagione);
         startMenu();
-
-
     }
 }
