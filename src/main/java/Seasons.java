@@ -21,7 +21,7 @@ public enum Seasons {
         return value;
     }
 
-    public static String getKeyFromValue(int num) {
+                     public static String getKeyFromValue(int num) {
         switch (num) {
             case 1:
                 return INVERNO.getKey();
